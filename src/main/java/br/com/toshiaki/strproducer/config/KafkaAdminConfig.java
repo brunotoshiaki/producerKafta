@@ -14,7 +14,7 @@ import org.springframework.kafka.core.KafkaAdmin.NewTopics;
 @RequiredArgsConstructor
 public class KafkaAdminConfig {
 
-  public final KafkaProperties properties;
+  private final KafkaProperties properties;
 
   @Bean
   public KafkaAdmin kafkaAdmin() {
